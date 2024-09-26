@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patrick Coffey - Exercise Programs</title>
+    <style>
+      body {
+        background-color: #0e3043;
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+      }
+
+      /* Style for the header container */
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0e3043;
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Added box shadow */
+      }
+
+      /* Style for the main header (title) */
+      .header h1 {
+        font-size: 40px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin: 0;
+      }
+
+      /* Style for the logo image */
+      .header img {
+        margin-left: 10px;
+        width: 80px;
+        height: 80px;
+        vertical-align: middle;
+      }
+
+      /* Style for the horizontal links */
+      .nav-links {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Style for individual links */
+      .nav-links a {
+        margin-left: 20px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      /* Style for links on hover */
+      .nav-links a:hover {
+        text-decoration: underline;
+      }
+
+      /* Style for the main content area */
+      .container {
+        padding: 40px 20px;
+        text-align: center;
+        color: white;
+      }
+
+      /* Style for the centered intro paragraph */
+      .intro-text {
+        font-size: 20px;
+        line-height: 1.6;
+        margin: 0 auto 40px auto;
+        width: 90%;
+        margin:auto
+      }
+
+      /* Style for the download button and description on the same line */
+      .button-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; /* Align button to the left */
+        margin-bottom: 20px;
+        text-align: left;
+      }
+
+      .program-link {
+        padding: 10px 15px;
+        background-color: #1ea1b3;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+        margin-right: 10px; /* Spacing between button and description */
+        margin-left: 185px; /* 60px from the left */
+      }
+
+      .program-link:hover {
+        background-color: #2ec4cc;
+      }
+
+      /* Style for the description text inline with the button */
+      .description {
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      /* Style for iframes */
+      iframe {
+        width: 100%;
+        max-width: 80%; /* Mobile responsive */
+        height: 600px;
+        border: 2px solid white;
+        margin-bottom: 40px;
+      }
+
+      @media (max-width: 768px) {
+        /* Reduce iframe height on smaller screens */
+        iframe {
+          height: 400px;
+        }
+
+        /* Adjust font size and padding on smaller screens */
+        .container p {
+          font-size: 18px;
+        }
+
+        .program-link {
+          font-size: 16px;
+          padding: 8px 12px;
+        }
+
+        .header h1 {
+          font-size: 32px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>
+        <a href="index.html" style="color: white; text-decoration: none"
+          >Patrick Coffey</a
+        >
+        <img src="images/Designer.jpeg" alt="Logo" />
+      </h1>
+      <div class="nav-links">
+        <a href="Exercise Program.html">Exercise Programs</a>
+        <a href="CV.html">CV and Academic Transcripts</a>
+        <a href="L'Oréal Capstone Project.html">L'Oréal</a>
+        <a href="feedback.html">Employer Testimonials</a>
+        <a href="templates/Financial Data.html">PDF Scraper</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>Exercise Programs</h1>
+
+      <p class="intro-text">
+        Below are two different weightlifting programs I have designed for
+        improving strength and muscle tone, along with a nutrition plan to aid
+        in weight loss or weight gain. 
+        
+        Click the download buttons to download the excel
+        files, or scroll down to view the embedded Google Sheets.
+      </p>
+
+      <div class="button-wrapper">
+        <a class="program-link" href="Strength.xlsx" download
+          >Download Program 1: Bodybuilding</a
+        >
+        <span class="description">
+          - A 4-day per week program focusing on hypertrophy designed to give
+          the user a v taper physique.
+        </span>
+      </div>
+
+      <iframe
+        id="program1"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTjBe-Xq-9lVt3m2mxWY87BHdW9NhHV-yw6iWtcgwduKE6P-XOrQyMI3RtMzUdte2F5fSLrho9ql6Fm/pubhtml?widget=true&amp;headers=false"
+        frameborder="1"
+        scrolling="no"
+      ></iframe>
+
+      <div class="button-wrapper">
+        <a class="program-link" href="Bodybuilding.xlsx" download
+          >Download Program 2: Strength</a
+        >
+        <span class="description">
+          - A 4-day per week split designed for strength and muscle building,
+          designed to drive the user's strength at the gym.
+        </span>
+      </div>
+
+      <iframe
+        id="program2"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSR5PsF5RwXGc007huc1csQw6m7ARCKIIvPhqcbdLTPNnAVcNFjSQA-ECvE3TMsBa2xpmKWvcBKQdah/pubhtml?widget=true&amp;headers=false"
+        frameborder="1"
+        scrolling="no"
+      ></iframe>
+
+      <div class="button-wrapper">
+        <a class="program-link" href="Sample Meal Plan.xlsx" download
+          >Download Nutrition Plan</a
+        >
+        <span class="description">
+          - A diet plan I followed to lose 13KG in nine weeks, designed to have
+          enough dietary fat to ensure the user gets enough sleep in a steep
+          calorie deficit.
+        </span>
+      </div>
+
+      <iframe
+        id="nutrition"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1n7047nNnz4e48hhVAstamGfcuZdY1l-E6O23zRhw5yh5uvY-1AD1gLJxbnjcGfG9TrE40zaEH_d5/pubhtml?widget=true&amp;headers=false"
+        frameborder="1"
+        scrolling="no"
+      ></iframe>
+    </div>
+  </body>
+</html>

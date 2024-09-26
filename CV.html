@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patrick Coffey - CV and Academic Transcripts</title>
+    <style>
+      body {
+        background-color: #0e3043;
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      /* Style for the header container */
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0e3043;
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Style for the main header (title) */
+      .header h1 {
+        font-size: 40px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin: 0;
+      }
+
+      /* Style for the logo image */
+      .header img {
+        margin-left: 10px;
+        width: 80px;
+        height: 80px;
+        vertical-align: middle;
+      }
+
+      /* Style for the horizontal links */
+      .nav-links {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Style for individual links */
+      .nav-links a {
+        margin-left: 20px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      /* Style for links on hover */
+      .nav-links a:hover {
+        text-decoration: underline;
+      }
+
+      /* Style for the main content area */
+      .container {
+        padding: 40px 20px;
+        text-align: center;
+        color: white;
+      }
+
+      /* Style for section headings */
+      .container h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 36px;
+        color: #ffffff;
+        margin-top: 40px;
+      }
+
+      .container h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        color: #ffffff;
+        margin-top: 40px;
+      }
+
+      /* Style for paragraph text */
+      .container p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 40px;
+        width: 90%;
+        margin:auto
+      }
+
+      /* Style for iframe displaying the CV and transcripts */
+      iframe {
+        width: 100%;
+        max-width: 80%; /* Mobile responsive */
+        height: 950px;
+        border: 2px solid white;
+        margin-bottom: 40px;
+      }
+
+      /* Button-like style for hyperlinks */
+      .program-link {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #1ea1b3;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+        margin-bottom: 20px;
+      }
+
+      .program-link:hover {
+        background-color: #2ec4cc;
+      }
+
+      @media (max-width: 768px) {
+        /* Reduce iframe height on smaller screens */
+        iframe {
+          height: 700px;
+        }
+
+        /* Adjust font size and padding on smaller screens */
+        .container h1,
+        .container h2 {
+          font-size: 28px;
+        }
+
+        .program-link {
+          font-size: 16px;
+          padding: 8px 12px;
+        }
+
+        .header h1 {
+          font-size: 32px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>
+        <a href="index.html" style="color: white; text-decoration: none"
+          >Patrick Coffey</a
+        >
+        <img src="images/Designer.jpeg" alt="Logo" />
+      </h1>
+      <div class="nav-links">
+        <a href="Exercise Program.html">Exercise Programs</a>
+        <a href="CV.html">CV and Academic Transcripts</a>
+        <a href="L'Oréal Capstone Project.html">L'Oréal</a>
+        <a href="feedback.html">Employer Testimonials</a>
+        <a href="templates/Financial Data.html">PDF Scraper</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>My CV</h1>
+      <p>
+        Below are my CV and academic transcripts, 
+        highlighting my diverse work experiences, which include internship experience in 
+        Risk, Finance, and Data analytics as well as one year on an IT Helpdesk.  
+
+        My academic transcripts also detail my module selections and grades. 
+        I am confident that my extensive work experience and successful project 
+        contributions make me a strong candidate for roles in Finance, Consulting or Business
+        Analytics where I would like to apply my new-found coding skills. 
+      </p>
+      <iframe src="Patrick%20Coffey%20CV%202024%20(1).pdf"></iframe>
+
+      <h2>Academic Transcripts</h2>
+      <iframe src="transcripts.pdf"></iframe>
+    </div>
+  </body>
+</html>

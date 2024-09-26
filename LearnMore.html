@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn More</title>
+    <style>
+        /* Resetting margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0e3043;
+        }
+
+        /* Style for the header container */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0e3043;
+            padding: 20px;
+        }
+
+        /* Style for the main header (title) */
+        .header h1 {
+            font-size: 40px;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            color: #ffffff;
+        }
+
+        /* Style for the logo image */
+        .header img {
+            margin-left: 10px;
+            width: 80px;
+            height: 80px;
+            vertical-align: middle;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Biography Section */
+        .biography-wrapper {
+            background-image: url("images/Dublin docklands 3.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .biography-container {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 40px;
+            margin: 0;
+            max-width: 80%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .biography-container h2 {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 36px;
+        }
+
+        .biography-container p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        /* Horizontal scrolling container */
+        .scroll-container {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            height: 400px;
+            padding: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+        }
+
+        /* Scroll area */
+        .scroll-area {
+            display: flex;
+            transition: transform 0.5s ease;
+            width: max-content;
+        }
+
+        /* Scroll items */
+        .scroll-item {
+            flex: 0 0 50%; /* Each item takes 50% of the container */
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+        .scroll-item:last-child {
+            margin-right: 0;
+        }
+        .scroll-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Overlay text */
+        .overlay-text {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Arrow buttons */
+        .scroll-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.7);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 24px;
+            padding: 10px;
+            z-index: 1;
+        }
+
+        .scroll-arrow.right {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>
+            <a href="index.html" style="color: #ffffff; text-decoration: none">Patrick Coffey</a>
+            <img src="images/Designer.jpeg" alt="Logo" />
+        </h1>
+        <div class="nav-links">
+            <a href="Exercise Program.html">Exercise Programs</a>
+            <a href="CV.html">CV and Academic Transcripts</a>
+            <a href="L'Oréal Capstone Project.html">L'Oréal</a>
+            <a href="feedback.html">Employer Testimonials</a>
+            <a href="financial data.html">PDF Scraper</a>
+        </div>
+    </div>
+
+    <!-- Biography section -->
+    <div class="biography-wrapper">
+        <div class="biography-container">
+            <h2>Biography</h2>
+            <p>
+                I am a recent Commerce graduate from University College Cork, majoring
+                in Business Consultancy, seeking a graduate role in Finance, Consulting, or Business
+                Analytics.
+                
+                My internships at PwC in IT Audit and Government and
+                Health Consulting have equipped me with skills in data analysis and
+                financial reporting, complementing my academic foundation in Commerce. 
+                
+                I also have experience on an IT Helpdesk and realising the 
+                importance of technology in today's business world 
+                I am currently learning to code to apply those skills to my future career.
+                
+                The development of this website is a way for me to
+                learn to code and demonstrate meaningful independent project work. 
+                
+                Check out the L'Oréal Capstone project I led in final year which includes 
+                financial modeling and the basic PDF Scraper I have developed which extracts Annual 
+                Sales data from L'Oréal's 2022 Annual Report. 
+            </p>
+        </div>
+    </div>
+
+    <!-- Horizontal scrolling container -->
+    <div class="scroll-container">
+        <button class="scroll-arrow right" onclick="scrollRight()">&#10095;</button> <!-- Right Arrow -->
+        
+        <div class="scroll-area">
+            <div class="scroll-item">
+                <a href="templates/Financial Data.html">
+                    <img src="images/finance.jpg" alt="Financial Market Insights" />
+                    <span class="overlay-text">Financial Data PDF Scraper</span>
+                </a>
+            </div>
+            <div class="scroll-item">
+                <a href="L'Oréal Capstone Project.html">
+                    <img src="images/L'Oreal scroll.jpg" alt="L'Oréal Case Study" />
+                    <span class="overlay-text">L'Oréal Case Study</span>
+                </a>
+            </div>
+            <div class="scroll-item">
+                <a href="feedback.html">
+                    <img src="images/employer testimonials scroll.jpg" alt="Employer Testimonials" />
+                    <span class="overlay-text">Employer Testimonials</span>
+                </a>
+            </div>
+            <div class="scroll-item">
+                <a href="CV.html">
+                    <img src="images/Academic transcripts scroll.jpg" alt="Academic Transcripts" />
+                    <span class="overlay-text">CV and Academic Transcripts</span>
+                </a>
+            </div>
+            <div class="scroll-item">
+                <a href="Exercise Program.html">
+                    <img src="images/University College Cork.jpg" alt="Exercise Programs" />
+                    <span class="overlay-text">Exercise Programs</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const scrollArea = document.querySelector('.scroll-area');
+        const scrollContainer = document.querySelector('.scroll-container');
+        const scrollRightButton = document.querySelector('.scroll-arrow.right');
+
+        let scrollPosition = 0; // Track scroll position
+        const totalItems = document.querySelectorAll('.scroll-item').length;
+
+        function scrollRight() {
+            const itemWidth = scrollContainer.clientWidth / 2; // Width of each visible item
+            const maxScroll = scrollArea.scrollWidth - scrollContainer.clientWidth;
+
+            scrollPosition += itemWidth;
+
+            // Check if at the end
+            if (scrollPosition >= maxScroll) {
+                // If at the last item, go back to the first item
+                scrollPosition = 0;
+            }
+
+            scrollArea.style.transform = `translateX(-${scrollPosition}px)`;
+        }
+
+        // Ensure immediate button visibility
+        window.onload = () => {
+            // No left button, so nothing needed here
+        };
+
+        // Add this to preload images (optional)
+        const images = document.querySelectorAll('.scroll-item img');
+        images.forEach((img) => {
+            const newImg = new Image();
+            newImg.src = img.src;
+        });
+    </script>
+</body>
+</html>

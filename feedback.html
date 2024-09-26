@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PwC Feedback</title>
+    <style>
+      body {
+        background-color: #0e3043;
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        scroll-behavior: smooth;
+        background-image: url("images/L'Oreal%20model.jpeg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0e3043; /* Matching background color */
+        padding: 20px; /* Matching padding */
+        box-sizing: border-box;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .header h1 {
+        font-size: 40px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin: 0;
+      }
+
+      .header img {
+        margin-left: 10px;
+        width: 80px;
+        height: 80px;
+        vertical-align: middle;
+      }
+
+      .nav-links {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .nav-links a {
+        margin-left: 20px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .nav-links a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: 40px auto;
+        text-align: center;
+      }
+
+      .container h1 {
+        font-size: 36px;
+        color: #ffffff; /* White color for heading */
+        margin-bottom: 10px;
+      }
+
+      .container p {
+        font-size: 18px;
+        color: #ffffff; /* White color for paragraph text */
+        margin-bottom: 30px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .grid-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+        cursor: pointer;
+        background-color: #1ea1b3;
+        height: 400px; /* Fixed height for uniformity */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Space between quote and title */
+        padding-bottom: 20px; /* Spacing from the bottom */
+      }
+
+      .grid-item img {
+        width: 100%;
+        height: 200px; /* Fixed height for uniform image size */
+        object-fit: cover;
+        display: block;
+        transition: opacity 0.3s;
+      }
+
+      .grid-item:hover img {
+        opacity: 0.8;
+      }
+
+      .grid-item:hover {
+        transform: scale(1.05);
+      }
+
+      .quote-container {
+        flex-grow: 1;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100px; /* Ensures a minimum height for the quote */
+      }
+
+      .quote {
+        font-size: 18px;
+        color: #ffffff; /* White color for quotes */
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .quote a {
+        color: #ffffff;
+        font-style: italic;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .quote a:hover {
+        text-decoration: underline;
+      }
+
+      .title {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .header h1 {
+          font-size: 32px;
+        }
+
+        .container h1 {
+          font-size: 28px;
+        }
+
+        .quote {
+          font-size: 16px;
+        }
+
+        .title {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>
+        <a href="index.html" style="color: white; text-decoration: none"
+          >Patrick Coffey</a
+        >
+        <img src="images/Designer.jpeg" alt="Logo" />
+      </h1>
+      <div class="nav-links">
+        <a href="Exercise Program.html">Exercise Programs</a>
+        <a href="CV.html">CV and Academic Transcripts</a>
+        <a href="L'Oréal Capstone Project.html">L'Oréal</a>
+        <a href="feedback.html">Employer Testimonials</a>
+        <a href="templates/Financial Data.html">PDF Scraper</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>PwC Feedback</h1>
+      <p>
+        This feedback highlights my strong performance and valuable
+        contributions during my tenure at PwC Consulting, showcasing my
+        commitment to excellence and effective teamwork.
+      </p>
+      <div class="grid">
+        <div class="grid-item">
+          <a href="Associate%20Workday%20Feedback%20HPVP.html">
+            <img src="images/feedback1.jpg" alt="Associate Workday Feedback" />
+          </a>
+          <div class="quote-container">
+            <div class="quote">
+              <a href="Associate%20Workday%20Feedback%20HPVP.html"
+                >"Patrick has consistently demonstrated outstanding qualities
+                that contribute to our team's success and cohesion."</a
+              >
+            </div>
+          </div>
+          <p class="title">Associate Workday Feedback</p>
+        </div>
+        <div class="grid-item">
+          <a href="HSE%20Client%20Feedback.html">
+            <img src="images/feedback2.jpg" alt="HSE Client Feedback" />
+          </a>
+          <div class="quote-container">
+            <div class="quote">
+              <a href="HSE%20Client%20Feedback.html"
+                >"...said he wanted me to know what a good job you were doing,
+                he says you're doing a really excellent job"</a
+              >
+            </div>
+          </div>
+          <p class="title">HSE Client Feedback</p>
+        </div>
+        <div class="grid-item">
+          <a href="HSE%20PMO%20Account%20Feedback.html">
+            <img src="images/feedback3.jpg" alt="HSE PMO Account Feedback" />
+          </a>
+          <div class="quote-container">
+            <div class="quote">
+              <a href="HSE%20PMO%20Account%20Feedback.html"
+                >"Patrick is enthusiastic and eager to learn and get
+                involved."</a
+              >
+            </div>
+          </div>
+          <p class="title">HSE PMO Account Feedback</p>
+        </div>
+        <div class="grid-item">
+          <a href="Manager%20Snapshot%20Feedback%20HPVP.html">
+            <img src="images/feedback4.jpg" alt="Manager Snapshot Feedback" />
+          </a>
+          <div class="quote-container">
+            <div class="quote">
+              <a href="Manager%20Snapshot%20Feedback%20HPVP.html"
+                >"Demonstrated strong judgment when faced with new or ambiguous
+                situations"</a
+              >
+            </div>
+          </div>
+          <p class="title">Manager Snapshot Feedback</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

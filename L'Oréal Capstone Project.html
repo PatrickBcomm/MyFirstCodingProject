@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L'Oréal Capstone Project</title>
+    <style>
+      body {
+        background-color: #0e3043;
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0e3043;
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .header h1 {
+        font-size: 40px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin: 0;
+      }
+
+      .header img {
+        margin-left: 10px;
+        width: 80px;
+        height: 80px;
+        vertical-align: middle;
+      }
+
+      .nav-links {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .nav-links a {
+        margin-left: 20px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .nav-links a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        padding: 40px 20px;
+        text-align: center;
+        color: white;
+      }
+
+      .container h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 36px;
+        color: #ffffff;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+
+      .project-description {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        width: 90%;
+        margin:auto
+      }
+
+      .download-link {
+        display: inline-block;
+        padding: 15px 25px;
+        background-color: #1ea1b3;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+        margin-bottom: 10px;
+      }
+
+      .download-link:hover {
+        background-color: #2ec4cc;
+      }
+
+      .file-size {
+        display: block;
+        font-size: 16px;
+        margin-top: 10px;
+        color: #ffffff;
+      }
+
+      .ppt-container {
+        margin-top: 40px;
+        text-align: center;
+      }
+
+      .ppt-container h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #ffffff;
+      }
+
+      iframe {
+        width: 100%;
+        max-width: 800px; /* Adjust as needed */
+        height: 600px; /* Adjust as needed */
+        border: 2px solid white;
+        border-radius: 8px;
+      }
+
+      @media (max-width: 768px) {
+        .container h1 {
+          font-size: 28px;
+        }
+
+        .download-link {
+          font-size: 18px;
+          padding: 12px 20px;
+        }
+
+        .header h1 {
+          font-size: 32px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>
+        <a href="index.html" style="color: white; text-decoration: none"
+          >Patrick Coffey</a
+        >
+        <img src="images/Designer.jpeg" alt="Logo" />
+      </h1>
+      <div class="nav-links">
+        <a href="Exercise Program.html">Exercise Programs</a>
+        <a href="CV.html">CV and Academic Transcripts</a>
+        <a href="L'Oréal Capstone Project.html">L'Oréal</a>
+        <a href="feedback.html">Employer Testimonials</a>
+        <a href="templates/Financial Data.html">PDF Scraper</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>L'Oréal Case Study</h1>
+      <p class="project-description">
+        Below is the L'Oréal Case Study group project where I was the team lead as 
+        part of my Commerce degree in UCC. 
+        
+        The project involved extensive market research, strategic analysis using
+        consulting frameworks and the development of financial models totaling 30,000 words. 
+        
+        The report includes a five year plan to integrate strategic reccomendations to boost revenue
+        by 20% and highlights my ability to tackle complex business challenges
+        and contribute valuable insights in a collaborative environment.
+
+        You will also find a slide deck summary of the project displayed below. 
+      </p>
+      <a class="download-link" href="BU4000%20Report%20Idea.pdf" download>
+        Download PDF
+      </a>
+      <span class="file-size">File Size: 2.5 MB</span>
+    </div>
+
+    <div class="ppt-container">
+      <h2>Slide Deck</h2>
+      <iframe src="BU4000 slide deck.pdf"></iframe>
+    </div>
+  </body>
+</html>
