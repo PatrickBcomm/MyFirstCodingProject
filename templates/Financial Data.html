@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financial Data</title>
+    <style>
+        body {
+            background-color: #0e3043;
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full height */
+            text-align: center;
+        }
+
+        /* Style for the main content area */
+        .container {
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+            border-radius: 10px; /* Rounded corners */
+            padding: 40px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+            max-width: 450px; /* Increased width for better layout */
+            width: 100%; /* Responsive width */
+        }
+
+        /* Style for section headings */
+        .container h1 {
+            font-size: 32px;
+            color: #ffffff;
+            margin: 0 0 20px 0; /* Add space below */
+        }
+
+        /* Style for paragraph text */
+        .container p {
+            font-size: 18px; /* Slightly smaller font for cleaner look */
+            line-height: 1.8; /* Increased line height for better readability */
+            margin-bottom: 25px; /* Increased margin for better separation */
+            text-align: justify; /* Align text for a neater appearance */
+        }
+
+        /* Link style */
+        .download-link {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #90ffdc;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .download-link:hover {
+            color: #b3ffeb;
+            text-decoration: underline;
+        }
+
+        /* Style for form input elements */
+        form {
+            text-align: left;
+        }
+
+        label {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="file"],
+        input[type="submit"] {
+            margin-top: 10px;
+            padding: 12px; /* Increased padding for larger, more touch-friendly buttons */
+            font-size: 16px;
+            width: 100%; /* Full width */
+            border: none;
+            border-radius: 5px; /* Rounded corners */
+            box-sizing: border-box;
+        }
+
+        input[type="file"] {
+            background-color: #ffffff; /* White background for file input */
+            color: #000; /* Black text for contrast */
+        }
+
+        input[type="submit"] {
+            background-color: #1ea1b3;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2ec4cc;
+            transform: scale(1.05); /* Subtle scaling effect on hover */
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .container h1 {
+                font-size: 28px;
+            }
+
+            .container p {
+                font-size: 16px;
+            }
+
+            input[type="file"],
+            input[type="submit"] {
+                font-size: 14px;
+                padding: 10px; /* Adjust padding for smaller devices */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>L'Oréal's 2022 Annual Report PDF Scraper</h1>
+        <p>
+            I developed this tool in Python to extract L'Oréal's Annual Sales Figures for 2022 from their PDF 
+            report and import them into an Excel file. Simply download their 2022 Annual Report, 
+            select the file from your device and click "Upload and Extract Sales". 
+            This is a proof of concept exercise for PDF scraping and exporting to Excel 
+            with future large-scale applications.
+        </p>
+
+        <!-- Download link for the L'Oréal 2022 Annual Report -->
+        <a href="https://www.loreal-finance.com/system/files/2023-03/LOREAL_2022_Annual_Report.pdf" class="download-link" target="_blank">
+            Download L'Oréal 2022 Annual Report (PDF)
+        </a>
+
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="file">Choose PDF File:</label>
+            <input type="file" id="file" name="file" accept=".pdf" required />
+            <input type="submit" value="Upload and Extract Sales" />
+        </form>
+    </div>
+</body>
+</html>
